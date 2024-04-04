@@ -36,7 +36,7 @@
         }
 
         .dark-icon {
-            --bg-color:#0b061f;
+            --bg-color: #0b061f;
             --text-color: #fdfdfd;
             --shadow-color: rgba(0, 0, 0, .7);
 
@@ -84,7 +84,7 @@
             font-size: 1.7rem;
             color: var(--white-color);
             font-weight: 500;
-            margin-right: 2.5rem;
+            margin-right: 2.8rem;
         }
 
 
@@ -245,6 +245,7 @@
             align-items: center;
             animation: professionRotate 13s ease-out infinite;
         }
+
         /* .home .profession-container .profession-box {
             position: absolute;
             top: 0;
@@ -260,23 +261,28 @@
         } */
 
         @keyframes professionRotate {
-            0%,20% {
+
+            0%,
+            20% {
                 transform: rotate(0deg);
             }
-    
-        25%,45% {
+
+            25%,
+            45% {
                 transform: rotate(-90deg);
             }
-        
-        50%,70% {
+
+            50%,
+            70% {
                 transform: rotate(-180deg);
             }
-        
-        75%,95% {
+
+            75%,
+            95% {
                 transform: rotate(-270deg);
             }
-        
-        100% {
+
+            100% {
                 transform: rotate(-360deg);
             }
         }
@@ -334,7 +340,7 @@
             border-bottom: 384px solid var(--main-color);
             border-left: 384px solid transparent;
         }
-      
+
 
 
 
@@ -347,11 +353,20 @@
 
         .home-img img {
             position: absolute;
-            bottom: -18px;
+            bottom: 0;
             right: 0;
             width: 100%;
             pointer-events: none;
         }
+        /* .home-img img {
+            position: absolute;
+            bottom: -.6rem;
+            
+            right: 0;
+            width: 105%;
+           
+            pointer-events: none;
+        } */
 
 
 
@@ -988,13 +1003,13 @@
             }
         }
 
-        @media (max-width: 365px){
-            .about-img img{
-                width:90vw;
+        @media (max-width: 365px) {
+            .about-img img {
+                width: 90vw;
             }
 
             .footer {
-                flex-direction:column-reverse;
+                flex-direction: column-reverse;
             }
 
             .footer p {
@@ -1002,6 +1017,8 @@
                 margin-top: 2rem;
             }
         }
+
+            
     </style>
 
 
@@ -1390,15 +1407,15 @@
 
         ScrollReveal({
             //  reset: true ,
-             distance:'80px',
-             duration:2000,
-             delay: 200
-            });
+            distance: '80px',
+            duration: 2000,
+            delay: 200
+        });
 
-            ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });   
-            ScrollReveal().reveal('.home-img img, .education-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });   
-            ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });   
-            ScrollReveal().reveal('.home-content h3, .home-content p , .about-content', { origin: 'right' });   
+        ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+        ScrollReveal().reveal('.home-img img, .education-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
+        ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
+        ScrollReveal().reveal('.home-content h3, .home-content p , .about-content', { origin: 'right' });
 
 
     </script>
